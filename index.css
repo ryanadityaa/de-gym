@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 nav {
     position: fixed;
     z-index: 10;
@@ -119,7 +122,7 @@ nav .icon-burger .line2{
     text-decoration: none;
     color: black;
     background-color: white;
-    padding: 10px;
+    padding: 12px;
     font-size: 20px;
     border-radius: 5px 10px 5px 10px;
 }
@@ -128,12 +131,79 @@ nav .icon-burger .line2{
     color: white;
     border: 2px solid #A15F1B;
     margin-left: 28px;
-    padding: 10px;
+    padding: 12px;
     font-size: 20px;
     border-radius: 5px 10px 5px 10px;
 }
-/* responsive for mobile */
-@media screen and (max-width :576px){
+.container-1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/*container-2*/
+.container-2{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: auto;
+    padding-top: 120px;
+}
+.container-2 .text .underline{
+    width: 10px;
+    height: 320px;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    background-color: #A15F1B;
+    display: flex;
+    align-items: center;
+}
+.container-2 .text{
+  width: 30%;
+  position: relative;
+  padding-left: 40px;
+  padding-top: 90px;
+}
+.container-2 .text h2{
+    font-size: 36px;
+}
+.container-2 .text p{
+    padding-top: 30px;
+    font-size:20px;
+    padding-bottom: 30px;
+}
+.container-2 .text a{
+    text-decoration: none;
+    color: black;
+    border : 2px solid #A15F1B;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.container-2 .image{
+    width:  360px;
+    height: 450px;
+    position: relative;
+    
+}
+.container-2 .image img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius:7px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 16px;
+    box-shadow: 0px 0px 15px #000000;
+}
+
+
+/* responsive for all navbar */
+@media screen and (max-width :1900px){
     nav .logo{
         float: left;
         width: 40%;
@@ -141,7 +211,7 @@ nav .icon-burger .line2{
         display: flex;
         align-items: center;
         color: black;
-        font-size: 19px;
+        font-size: 20px;
     }
     nav .icon-burger{
         display: block;
@@ -190,10 +260,11 @@ nav .icon-burger .line2{
         opacity: 0;
     }
 
-
+}
+@media screen and (max-width:576px){
     .hero-image .text-hero{
         position: absolute;
-        top: 34%;
+        top: 24%;
         left: auto;   
         width: 100%;
         padding: 0 4%;
@@ -233,10 +304,85 @@ nav .icon-burger .line2{
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        height: 80vh;
+        height: 100vh;
         width: 100%;
         z-index: 3;
         top: 90px;
         object-fit: cover;
     }
+
+
+    .container-2{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: auto 10px;
+        width: 90%;
+        height: auto;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .container-2 .text{
+        width: 90%;
+        padding-left: 30px;
+        padding-top: 110px;
+    }
+    .container-2 .text .underline{
+        width: 7px;
+        height: 99px;
+        position: absolute;
+        left: 10px;
+        top: 70px;
+    }
+    .container-2 .text h2{
+        font-size: 30px;
+    }
+    .container-2 .text p{
+        padding-top: 30px;
+        font-size:18px;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    
+    .container-2 .text a{
+        text-decoration: none;
+        color: black;
+        border : 2px solid #A15F1B;
+        padding: 10px 10px;     
+        border-radius: 6px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+    .container-2 .image{
+        width:  100%;
+        height: 350px;
+        position: relative;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .container-2 .image img{
+        
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius:7px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 16px;
+        box-shadow: 0px 0px 15px #000000;
+    }
+    .container-image{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: auto 5.5px;
+    }
+    
 }
