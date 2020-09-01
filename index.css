@@ -347,6 +347,7 @@ nav .icon-burger .line2{
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .container-kontak .banner{
     position: relative;
@@ -358,6 +359,7 @@ nav .icon-burger .line2{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 6px;
 }
  .title-kontak{
     text-align: center;
@@ -682,7 +684,7 @@ nav .icon-burger .line2{
         display: flex;
         justify-content: center;
         align-content: center;
-        width: 80%;
+        width: 90%;
         flex-wrap: wrap;
      
     }
@@ -692,6 +694,17 @@ nav .icon-burger .line2{
         height: 310px;
         margin: 10px;
         cursor: pointer;
+    }
+
+    .container-kontak .banner{
+        position: relative;
+        z-index: 10;
+        height: 450px;
+    } 
+
+    .container-kontak .banner img{
+        width: 100%;
+        height: 100%;
     }
 
     .testimonial{
@@ -712,7 +725,6 @@ nav .icon-burger .line2{
     .container-kontak{
         display: flex;
         flex-direction: column;
-      
         justify-content: center;
         align-content: center;
         width: 100%;
@@ -738,10 +750,16 @@ nav .icon-burger .line2{
         margin:10px auto;
     }
     .container-form .form{
-        
+        width:85%;
         margin:10px auto;
     }
     .title-kontak{
         font-size:30px;
+        width: 80%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
     }
 }
