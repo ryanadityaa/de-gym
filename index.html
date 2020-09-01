@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <title>De Gym</title>
 </head>
 <body>
@@ -21,8 +26,8 @@
             <li><a href="">Beranda</a></li>
             <li><a href="#section2">Tentang</a></li>
             <li><a href="#section3">Fasilitas</a></li>
-            <li><a href="">Testimoni</a></li>
-            <li><a href="">Kontak</a></li>
+            <li><a href="#section4">Testimoni</a></li>
+            <li><a href="#section5">Kontak Kami</a></li>
         </ul>
         <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
@@ -100,12 +105,142 @@
     </div>
 
     <!--container kata mereka-->
-    <div class="container-5">
-        <h2>Apa kata <br> mereka tentang kami ?</h2>
+    <div class="testimonial-section" id="section4">
+        <div class="inner-width">
+            <h2>Apa Kata Mereka ?</h2>
+            <div class="border"></div>
+
+            <div class="owl-carousel owl-theme">
+                <div class="testimonial">
+                    <div class="test-info">
+                        <div class="container-pict">
+                        <img class="test-pic" src="img/adel.jpg">
+                        </div>
+                        <div class="test-name">
+                            <span>Adelia</span>
+                        
+                        </div>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quasi sed doloremque iusto atque?
+
+                    </p>
+                    
+                </div>
+
+                <div class="testimonial">
+                    <div class="test-info">
+                        <div class="container-pict">
+                        <img class="test-pic" src="img/ryan.jpg">
+                        </div>
+                        <div class="test-name">
+                            <span>Ryan</span>
+                       
+                        </div>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quasi sed doloremque iusto atque?
+
+                    </p>
+
+                </div>
+
+                <div class="testimonial">
+                    <div class="test-info">
+                        <div class="container-pict">
+                        <img class="test-pic" src="img/hikaru.jpg">
+                        </div>
+                        <div class="test-name">
+                            <span>Hikaru</span>
+                       
+                        </div>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quasi sed doloremque iusto atque?
+
+                    </p>
+
+                </div>
+
+                <div class="testimonial">
+                    <div class="test-info">
+                        <div class="container-pict">
+                        <img class="test-pic" src="img/alisa.jpg">
+                        </div>
+                        <div class="test-name">
+                            <span>Alisa</span>
+                         
+                        </div>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quasi sed doloremque iusto atque?
+
+                    </p>
+
+                </div>
+
+                <div class="testimonial">
+                    <div class="test-info">
+                        <div class="container-pict">
+                        <img class="test-pic" src="img/yata.jpeg">
+                        </div>
+                        <div class="test-name">
+                            <span>Yata</span>
+                         
+                        </div>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quasi sed doloremque iusto atque?
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container-6">
-        
+    <!--container kontak-->
+    <div id="section5"></div>
+    <h2 class="title-kontak" >Ingin Bertanya Sesuatu ?</h2>
+    <div class="container-kontak">
+        <div class="banner">
+            <img src="img/service-center.jpg">
+        </div>
+        <div class="container-form">
+            <div class="form">
+                <p>Masukan nama anda </p>
+                <input type="text">
+                <p>Masukan email anda </p>
+                <input type="text">
+                <p>Masukan pertanyaan anda</p>
+                <textarea></textarea>
+                <input type="submit" class="submit" value="Kirim">
+            </div>
+        </div>
     </div>
+<script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+        margin:20,
+         nav: false,
+         loop: true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            680:{
+                items:2
+            },
+            960:{
+                items:3
+            }
+        }
+    });
+</script>
 </body>
 </html>

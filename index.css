@@ -25,6 +25,7 @@ nav .logo{
     align-items: center;
     color: black;
     font-size: 25px;
+  
 }
 nav .logo h2 span{
     color:#A15F1B ;
@@ -89,7 +90,7 @@ nav .icon-burger .line2{
 
 /* bg-hero */
 .hero-image{
-    background: url(img/banner.jpg);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(img/banner.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,6 +112,7 @@ nav .icon-burger .line2{
 .hero-image .text-hero p{
     font-size: 50px;   
     width: 60%;
+    
 }
 .hero-image .text-hero .text2{
     font-size: 24px;
@@ -120,9 +122,9 @@ nav .icon-burger .line2{
 }
 .hero-image .text-hero .button1{
     text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 12px;
+    color: white;
+    background-color: #A15F1B;;
+    padding: 15px;
     font-size: 20px;
     border-radius: 5px 10px 5px 10px;
 }
@@ -131,9 +133,14 @@ nav .icon-burger .line2{
     color: white;
     border: 2px solid #A15F1B;
     margin-left: 28px;
-    padding: 12px;
+    padding: 14px;
     font-size: 20px;
     border-radius: 5px 10px 5px 10px;
+    transition: .4s;
+}
+.hero-image .text-hero .button2:hover{
+    background-color:#A15F1B;
+    transition: .4s;
 }
 .container-1{
     width: 100%;
@@ -149,7 +156,7 @@ nav .icon-burger .line2{
     padding-top: 120px;
 }
 .container-2 .text .underline{
-    width: 7px;
+    width: 5px;
     height: 320px;
     position: absolute;
     left: 0px;
@@ -171,6 +178,7 @@ nav .icon-burger .line2{
     padding-top: 30px;
     font-size:20px;
     padding-bottom: 30px;
+    color:#767676;
 }
 .container-2 .text a{
     text-decoration: none;
@@ -216,10 +224,11 @@ nav .icon-burger .line2{
 .container-3 .text p{
     padding-top: 30px;
     font-size:20px;
+    color:#767676;
 }
 .container-3 .underline{
     background-color: #A15F1B;
-    width: 7px;
+    width: 5px;
     height: 120px;
 }
 
@@ -259,16 +268,137 @@ nav .icon-burger .line2{
 }
 
 
-/*container-5*/
-.container-5{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 120px;
+/*container-slider*/
+
+.inner-width{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+    align-items: center;
+    padding-top: 30px;
 }
-.container-5 h2{
-    font-size: 34px;
+.testimonial-section{
+    width: 100%;
+    padding-top: 120px;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.testimonial-section h2{
     text-align:center;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+.border{
+    width: 170px;
+    height: 3px;
+    background-color: #A15F1B;
+    margin:30px auto;
+}
+.testimonial{
+    
+    background-color: rgb(236, 236, 236) ;
+    border-radius: 6px;
+    padding: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    width:100%;
+    height: 100%;
+    box-shadow: 0px 0px 20px rgb(236, 236, 236) ;
+}
+.test-info{
+    display: flex;
+    width: 90px;
+    align-items: center;
+}
+.container-pict{
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.test-pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 15px;
+    position: absolute;
+    border-radius: 4px;
+}
+.test-name{
+    width: 40%;
+    padding-left: 30px;
+}
+.test-name span{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 23px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+.testimonial p{
+    padding-top: 25px;
+    font-size:17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*container-kontak*/
+
+.container-kontak{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.container-kontak .banner{
+    position: relative;
+    width: 400px;
+    height: 450px;
+}
+.container-kontak .banner img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .title-kontak{
+    text-align: center;
+    font-size:36px;
+    padding-bottom: 70px;
+    margin-top: 30px;
+}
+.container-form{
+    width: 30%;
+    height: 100%;
+}
+.container-form .form{
+ 
+    margin-left: -60px;
+    position: relative;
+    z-index: 6;
+}
+.container-form .form p{
+    font-size: 18px;
+}
+.container-form .form input{
+    width: 100%;
+    height: 40px;
+    margin: 13px auto;
+    padding:10px;
+}
+.container-form .form textarea{
+    height: 26.5vh;
+    padding:0px;
+    width: 100%;
+    margin: 13px auto;
+}
+.container-form .form .submit{
+    padding: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #A15F1B;
+    border:none;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 0px 20px solid #A15F1B ; 
 }
 /* responsive for all navbar */
 @media screen and (max-width :1900px){
@@ -395,7 +525,7 @@ nav .icon-burger .line2{
     nav :checked ~ .icon-burger .line2:nth-child(2){
         opacity: 0;
     }
-
+    
     .hero-image .text-hero{
         position: absolute;
         top: 24%;
@@ -461,7 +591,7 @@ nav .icon-burger .line2{
         padding-top: 110px;
     }
     .container-2 .text .underline{
-        width: 7px;
+        width: 5px;
         height: 99px;
         position: absolute;
         left: 10px;
@@ -471,10 +601,12 @@ nav .icon-burger .line2{
         font-size: 30px;
     }
     .container-2 .text p{
-        padding-top: 30px;
+        padding-top: 10px;
         font-size:18px;
         padding-bottom: 30px;
         width: 100%;
+        margin-top:10px;
+        line-height: 25px ;
     }
     
     .container-2 .text a{
@@ -532,6 +664,7 @@ nav .icon-burger .line2{
     .container-3 .text p{
         font-size: 18px;
         width: 80%;
+        line-height: 25px ;
     }
     .container-3 .underline {
         position: relative;
@@ -561,6 +694,54 @@ nav .icon-burger .line2{
         cursor: pointer;
     }
 
-    
-    
+    .testimonial{
+        height: 100%;
+    }
+    .test-name {
+        width: 27%;
+    }
+    .test-info{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .inner-width h2{
+        font-size:28px;
+    }
+
+    .container-kontak{
+        display: flex;
+        flex-direction: column;
+      
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    .container-kontak .banner{
+        position: relative;
+        width: 250px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        z-index: 6;
+        margin:10px auto;
+    }
+    .container-form{
+        display:flex;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        z-index:10;
+        width:100%;
+        margin:10px auto;
+    }
+    .container-form .form{
+        
+        margin:10px auto;
+    }
+    .title-kontak{
+        font-size:30px;
+    }
 }
