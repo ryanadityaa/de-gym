@@ -6,6 +6,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
 nav {
     position: fixed;
     z-index: 9999;
@@ -123,7 +126,7 @@ nav .icon-burger .line2{
 .hero-image .text-hero .button1{
     text-decoration: none;
     color: white;
-    background-color: #A15F1B;;
+    background: linear-gradient(50deg,#A15F1B,#c87f37);
     padding: 15px;
     font-size: 20px;
     border-radius: 5px 10px 5px 10px;
@@ -189,6 +192,7 @@ nav .icon-burger .line2{
     padding-right: 100px;
     border-radius: 6px;
     width: 100%;
+    
 }
 
 .container-2 .image{
@@ -206,7 +210,13 @@ nav .icon-burger .line2{
     border-top-right-radius: 16px;
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 16px;
-    box-shadow: 0px 0px 15px #000000;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -249,8 +259,8 @@ nav .icon-burger .line2{
 }
 .container-4 .wrapper .card{
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 280px;
+    height: 300px;
     margin: 10px;
     cursor: pointer;
 }
@@ -360,6 +370,13 @@ nav .icon-burger .line2{
     height: 100%;
     object-fit: cover;
     border-radius: 6px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 80px 80px rgba(0, 0, 0, 0.12);
 }
  .title-kontak{
     text-align: center;
@@ -396,7 +413,7 @@ nav .icon-burger .line2{
     padding: 10px 10px;
     text-align: center;
     cursor: pointer;
-    background-color: #A15F1B;
+    background: linear-gradient(50deg,#A15F1B,#c87f37);
     border:none;
     color: white;
     font-size: 18px;
@@ -587,6 +604,7 @@ nav .icon-burger .line2{
         flex-wrap: wrap;
         margin-top: 30px;
     }
+    
     .container-2 .text{
         width: 90%;
         padding-left: 30px;
@@ -627,13 +645,16 @@ nav .icon-burger .line2{
         height: 350px;
         position: relative;
         padding-top: 20px;
+        margin:10px auto;
         display: flex;
         justify-content: center;
         align-content: center;
         align-items: center;
     }
     .container-2 .image img{
-        
+        display: flex;
+        justify-content: center;
+        align-content: center;
         position: absolute;
         object-fit: cover;
         width: 100%;
@@ -678,7 +699,8 @@ nav .icon-burger .line2{
         display: flex;
         justify-content: center;
         align-content: center;
-        margin-top: 80px;
+        margin-top: 30px;
+        width: 100%;
     }
     .container-4 .wrapper{
         display: flex;
@@ -686,25 +708,30 @@ nav .icon-burger .line2{
         align-content: center;
         width: 90%;
         flex-wrap: wrap;
-     
+        margin:30px auto;
     }
     .container-4 .wrapper .card{
         position: relative;
-        width: 280px;
-        height: 310px;
+        width: 100%;
         margin: 10px;
         cursor: pointer;
     }
 
+
+
+
     .container-kontak .banner{
         position: relative;
         z-index: 10;
-        height: 450px;
+        width :85%;
+        margin:9px auto;
+        
     } 
 
     .container-kontak .banner img{
         width: 100%;
-        height: 100%;
+        height: 90%;
+        position: absolute;
     }
 
     .testimonial{
@@ -729,17 +756,7 @@ nav .icon-burger .line2{
         align-content: center;
         width: 100%;
     }
-    .container-kontak .banner{
-        position: relative;
-        width: 250px;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        position: relative;
-        z-index: 6;
-        margin:10px auto;
-    }
+
     .container-form{
         display:flex;
         position: relative;
@@ -748,6 +765,7 @@ nav .icon-burger .line2{
         z-index:10;
         width:100%;
         margin:10px auto;
+        margin-top:-20px;
     }
     .container-form .form{
         width:85%;
