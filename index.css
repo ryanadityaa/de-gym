@@ -102,6 +102,7 @@ nav .icon-burger .line2{
     width: 100%;
     z-index: 3;
     top: 90px;
+    background-attachment: fixed;
 }
 
 .hero-image .text-hero{
