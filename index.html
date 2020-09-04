@@ -6,8 +6,10 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
     <title>De Gym</title>
@@ -17,9 +19,9 @@
     <!--header-->
    <nav>
         <input id="nav-toggle" type="checkbox">
-        <div class="logo">
+        <div class="logo" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">
             <h2>
-                <span>De</span> Gym
+                <span >De</span> Gym
             </h2>
         </div>
         <ul class="links">
@@ -29,20 +31,20 @@
             <li><a href="#section4">Testimoni</a></li>
             <li><a href="#section5">Kontak Kami</a></li>
         </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line2"></div>
-            <div class="line"></div>
+        <label for="nav-toggle" class="icon-burger" >
+            <div class="line" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400"></div>
+            <div class="line2" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500"></div>
+            <div class="line" data-aos="fade-left" data-aos-duration="800" data-aos-delay="600"></div>
         </label>
    </nav> 
 
    <!--bg-hero-->
-   <div class="container-1">
+   <div class="container-1" data-aos="fade" data-aos-duration="1200" data-aos-delay="700">
        <div class="hero-image">
            <div class="text-hero">
-                <p>Ciptakan raga yang bugar bersama kami disini</p>
-                <p class="text2">dan daftarkan diri anda guna mendapatkan pelatihan tambahan</p>
-                <div class="button">
+                <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">Ciptakan raga yang bugar bersama kami disini</p>
+                <p class="text2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">dan daftarkan diri anda guna mendapatkan pelatihan tambahan</p>
+                <div class="button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1200">
                     <a href="" class="button1">Daftar Sekarang</a>
                     <a href="#section2" class="button2">Lihat Selengkapnya</a>
                 </div>
@@ -54,17 +56,19 @@
     <div id="section2"></div>
     <div class="container-2">
         <div class="text">
-           <div class="underline"></div>
-           <h2 >Tentang Kami</h2>
-           <p>
+           <div class="underline" data-aos="fade-down" data-aos-delay="150"></div>
+           <h2 data-aos="fade-down"  data-aos-delay="200">Tentang Kami</h2>
+           <p data-aos="fade-up"  data-aos-delay="250">
                De Gym merupakan tempat yang tepat bagi anda yang ingin menciptakan badan yang sehat dan 
                kuat. <br><br>
                 De Gym telah berdiri sejak 1990 dan telah mengantongi berbagai sertifikat penghargaan
            </p>
+           <div  data-aos="fade-up"  data-aos-delay="260">
               <a href="" class="button">Baca Selengkapnya</a>
+            </div>
         </div>
         <div class="container-image">
-            <div class="image">
+            <div class="image" data-aos="fade-down" data-aos-delay="100">
                 <img src="img/tentang.jpg">
             </div>
         </div>
@@ -73,32 +77,36 @@
     <!--container fasilitas-->
     <div class="container-3" id="section3">
         <div class="text">
+            <div  data-aos="fade-up"  data-aos-delay="250">
             <h2>Fasilitas Kami</h2>
+            </div>
+            <div  data-aos="fade-up"  data-aos-delay="300">
             <p>
                 Kami menyediakan beragam fasilitas <br>
                 untuk menunjang kegiatan olahraga anda
             </p>
+            </div>
         </div>
-        <div class="underline"></div>
+        <div class="underline"  data-aos="fade-right"  data-aos-delay="90"></div>
     </div>
     <div class="container-4">
         <div class="wrapper">
-            <div class="card">
+            <div class="card"  data-aos="fade-up"  data-aos-delay="350">
                 <img src="img/fasilitas1.jpg">
             </div>
-            <div class="card">
+            <div class="card"  data-aos="fade-up"  data-aos-delay="350">
                 <img src="img/fasilitas2.jpg">
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up"  data-aos-delay="350">
                 <img src="img/fasilitas3.jpg">
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up"  data-aos-delay="350">
                 <img src="img/fasilitas4.jpg">
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up"  data-aos-delay="350">
                 <img src="img/fasilitas5.jpg">
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-up"  data-aos-delay="350">
                 <img src="img/samuel-girven-VJ2s0c20qCo-unsplash.jpg">
             </div>
         </div>
@@ -107,12 +115,14 @@
     <!--container kata mereka-->
     <div class="testimonial-section" id="section4">
         <div class="inner-width">
-            <h2>Apa Kata Mereka ?</h2>
-            <div class="border"></div>
+            <div data-aos="fade-right"  data-aos-delay="100">
+                <h2>Apa Kata Mereka ?</h2>
+            </div>
+            <div class="border" data-aos="fade-left"  data-aos-delay="100"></div>
 
-            <div class="owl-carousel owl-theme">
-                <div class="testimonial">
-                    <div class="test-info">
+            <div class="owl-carousel owl-theme" data-aos="fade-up"  data-aos-delay="200">
+                <div class="testimonial" >
+                    <div class="test-info" >
                         <div class="container-pict">
                         <img class="test-pic" src="img/adel.jpg">
                         </div>
@@ -129,7 +139,7 @@
                     
                 </div>
 
-                <div class="testimonial">
+                <div class="testimonial"  >
                     <div class="test-info">
                         <div class="container-pict">
                         <img class="test-pic" src="img/ryan.jpg">
@@ -206,14 +216,16 @@
 
     <!--container kontak-->
     <div id="section5"></div>
-    <h2 class="title-kontak" >Ingin Bertanya Sesuatu ?</h2>
-    <div class="container-kontak">
-        <div class="banner">
+    <div data-aos="fade-up"  data-aos-delay="100">
+         <h2 class="title-kontak" >Ingin Bertanya Sesuatu ?</h2>
+    </div>
+    <div class="container-kontak" data-aos="fade-up"  data-aos-delay="150">
+        <div class="banner" >
             <img src="img/service-center.jpg">
         </div>
         <div class="container-form">
-            <div class="form">
-                <p>Masukan nama anda </p>
+            <div class="form" >
+                <p >Masukan nama anda </p>
                 <input type="text">
                 <p>Masukan email anda </p>
                 <input type="text">
@@ -222,6 +234,12 @@
                 <input type="submit" class="submit" value="Kirim">
             </div>
         </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <i class="fa fa-copyright"></i>
+        <p>copyright 2020 | ryanadityap </p>
     </div>
 <script type="text/javascript">
     $(".owl-carousel").owlCarousel({
@@ -240,6 +258,10 @@
                 items:3
             }
         }
+    });
+
+    AOS.init({
+        duration : 800,
     });
 </script>
 </body>
